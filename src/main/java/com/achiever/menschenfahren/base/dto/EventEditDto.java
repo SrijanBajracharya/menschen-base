@@ -20,7 +20,6 @@ public class EventEditDto implements RestOperationDto {
     private static final long serialVersionUID = 1956092870757115263L;
 
     @Schema(description = "The user creating the event")
-    @Nonnull
     private String            userId;
 
     @Schema(description = "The name of event")

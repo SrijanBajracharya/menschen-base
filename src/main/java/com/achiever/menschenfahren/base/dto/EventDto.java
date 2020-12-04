@@ -1,5 +1,7 @@
 package com.achiever.menschenfahren.base.dto;
 
+import java.util.Date;
+
 import javax.annotation.Nonnull;
 
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -15,14 +17,18 @@ import lombok.ToString;
 @EqualsAndHashCode(callSuper = true)
 public class EventDto extends EventCreateDto {
 
-	private static final long serialVersionUID = 6716632698180385976L;
+    private static final long serialVersionUID = 6716632698180385976L;
 
-	@Schema(description = "The id of the user")
-	@Nonnull
-	private String id;
+    @Schema(description = "The id of the user")
+    @Nonnull
+    private String            id;
 
-	@Schema(description = "If the user is voided", example = "false")
-	@Nonnull
-	private boolean voided;
+    @Schema(description = "If the user is voided", example = "false")
+    @Nonnull
+    private boolean           voided;
+
+    @Schema(description = "Created time of an event")
+    @Nonnull
+    private Date              createdTimestamp;
 
 }
