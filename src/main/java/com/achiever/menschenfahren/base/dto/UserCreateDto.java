@@ -18,6 +18,11 @@ import lombok.ToString;
 @EqualsAndHashCode(callSuper = true)
 public class UserCreateDto extends UserEditDto {
 
-	private static final long serialVersionUID = 3704232114446756938L;
+    private static final long serialVersionUID = 3704232114446756938L;
+    /**
+     * password of an user.
+     */
+    @Schema(description = "password of an user")
+    private String            password;
 
 }

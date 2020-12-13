@@ -19,6 +19,10 @@ public class EventTypeDto extends EventTypeCreateDto {
 
     private static final long serialVersionUID = -1406103640084221723L;
 
+    @Schema(description = "The id of event type.")
+    @Nonnull
+    private String            id;
+
     @Schema(description = "Created Timestamp of Event type.")
     @Nonnull
     private Date              createdTimestamp;
