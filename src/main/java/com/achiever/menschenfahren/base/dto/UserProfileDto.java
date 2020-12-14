@@ -27,6 +27,6 @@ public class UserProfileDto extends UserProfileCreateDto {
 
     @Schema(description = "The user object")
     @Nonnull
-    private UserDto           user;
+    private UserEditDto       user;
 
 }
