@@ -1,5 +1,7 @@
 package com.achiever.menschenfahren.base.dto;
 
+import javax.annotation.Nonnull;
+
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -31,6 +33,10 @@ public class UserEditDto implements RestOperationDto {
      */
     @Schema(description = "Email id of an user")
     private String            email;
+
+    @Schema(description = "display name of an user")
+    @Nonnull
+    private String            username;
 
     // @Schema(description = "authentication type of an user")
     // private AuthProviderType authenticationType;
