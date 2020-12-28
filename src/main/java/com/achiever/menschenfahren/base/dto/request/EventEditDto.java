@@ -1,8 +1,10 @@
-package com.achiever.menschenfahren.base.dto;
+package com.achiever.menschenfahren.base.dto.request;
 
 import java.util.Date;
 
 import javax.annotation.Nonnull;
+
+import com.achiever.menschenfahren.base.dto.RestOperationDto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;

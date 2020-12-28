@@ -1,4 +1,4 @@
-package com.achiever.menschenfahren.base.dto;
+package com.achiever.menschenfahren.base.dto.request;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
@@ -16,8 +16,8 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = true)
-public class EventCreateDto extends EventEditDto {
+public class EventTypeCreateDto extends EventTypeEditDto {
 
-	private static final long serialVersionUID = -4875731276051428913L;
+    private static final long serialVersionUID = 8706303539338148371L;
 
 }
