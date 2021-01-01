@@ -44,8 +44,8 @@ public class EventEditDto implements RestOperationDto {
     @Schema(description = "Country code of the location")
     private String            countryCode;
 
-    // @Schema(description = "The type of event")
-    // private EventTypes eventTypes;
+    @Schema(description = "The type of event")
+    private String            eventTypeId;
 
     @Schema(description = "The description about the event")
     private String            description;

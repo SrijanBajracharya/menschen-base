@@ -33,4 +33,7 @@ public class EventDto extends EventCreateDto {
     @Nonnull
     private Date              createdTimestamp;
 
+    @Schema(description = "Event Type of an event")
+    private EventTypeDto      eventType;
+
 }
