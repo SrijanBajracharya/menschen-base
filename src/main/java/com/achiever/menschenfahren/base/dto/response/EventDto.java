@@ -5,6 +5,7 @@ import java.util.Date;
 import javax.annotation.Nonnull;
 
 import com.achiever.menschenfahren.base.dto.request.EventCreateDto;
+import com.achiever.menschenfahren.base.dto.request.UserEditDto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
@@ -35,5 +36,8 @@ public class EventDto extends EventCreateDto {
 
     @Schema(description = "Event Type of an event")
     private EventTypeDto      eventType;
+
+    @Schema(description = "The user creating the event")
+    private UserEditDto       user;
 
 }

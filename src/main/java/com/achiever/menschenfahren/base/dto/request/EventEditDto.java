@@ -24,9 +24,6 @@ public class EventEditDto implements RestOperationDto {
     @Schema(description = "The id of user creating the event")
     private String            userId;
 
-    @Schema(description = "The user creating the event")
-    private UserEditDto       user;
-
     @Schema(description = "The name of event")
     @Nonnull
     private String            name;
