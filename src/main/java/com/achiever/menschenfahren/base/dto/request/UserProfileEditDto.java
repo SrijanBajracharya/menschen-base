@@ -1,5 +1,6 @@
-package com.achiever.menschenfahren.base.dto;
+package com.achiever.menschenfahren.base.dto.request;
 
+import com.achiever.menschenfahren.base.dto.RestOperationDto;
 import com.achiever.menschenfahren.base.model.Gender;
 
 import io.swagger.v3.oas.annotations.media.Schema;

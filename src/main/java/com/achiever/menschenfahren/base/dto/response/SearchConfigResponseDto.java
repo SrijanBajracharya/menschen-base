@@ -1,8 +1,10 @@
-package com.achiever.menschenfahren.base.dto;
+package com.achiever.menschenfahren.base.dto.response;
 
 import java.util.Date;
 
 import javax.annotation.Nonnull;
+
+import com.achiever.menschenfahren.base.dto.request.SearchConfigCreateDto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
@@ -15,20 +17,16 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = true)
-public class EventTypeDto extends EventTypeCreateDto {
+public class SearchConfigResponseDto extends SearchConfigCreateDto {
 
-    private static final long serialVersionUID = -1406103640084221723L;
+    private static final long serialVersionUID = -6331054781484842593L;
 
-    @Schema(description = "The id of event type.")
     @Nonnull
+    @Schema(description = "The id of the search config.")
     private String            id;
 
-    @Schema(description = "Created Timestamp of Event type.")
     @Nonnull
-    private Date              createdTimestamp;
-
-    @Nonnull
-    @Schema(description = "Modified timestamp of Event type.")
+    @Schema(description = "The modified timestamp.")
     private Date              modifiedTimestamp;
 
 }

@@ -1,6 +1,10 @@
-package com.achiever.menschenfahren.base.dto;
+package com.achiever.menschenfahren.base.dto.response;
+
+import java.util.Date;
 
 import javax.annotation.Nonnull;
+
+import com.achiever.menschenfahren.base.dto.request.UserCreateDto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
@@ -13,7 +17,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = true)
-public class UserProfileDto extends UserProfileCreateDto {
+public class UserDto extends UserCreateDto {
 
     private static final long serialVersionUID = 6537394434980008873L;
 
@@ -25,8 +29,11 @@ public class UserProfileDto extends UserProfileCreateDto {
     @Nonnull
     private boolean           voided;
 
-    @Schema(description = "The user object")
+    @Schema(description = "Modified timestamp of user.")
     @Nonnull
-    private UserEditDto       user;
+    private Date              modifiedTimestamp;
 
+    @Nonnull
+    @Schema(description = "Created timestamp of user.")
+    private Date              createdTimestamp;
 }

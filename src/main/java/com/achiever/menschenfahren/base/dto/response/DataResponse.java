@@ -1,4 +1,4 @@
-package com.achiever.menschenfahren.base.dto;
+package com.achiever.menschenfahren.base.dto.response;
 
 import java.io.Serializable;
 

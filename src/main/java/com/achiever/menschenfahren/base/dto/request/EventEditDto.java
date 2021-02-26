@@ -1,8 +1,10 @@
-package com.achiever.menschenfahren.base.dto;
+package com.achiever.menschenfahren.base.dto.request;
 
 import java.util.Date;
 
 import javax.annotation.Nonnull;
+
+import com.achiever.menschenfahren.base.dto.RestOperationDto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
@@ -22,9 +24,6 @@ public class EventEditDto implements RestOperationDto {
     @Schema(description = "The id of user creating the event")
     private String            userId;
 
-    @Schema(description = "The user creating the event")
-    private UserEditDto       user;
-
     @Schema(description = "The name of event")
     @Nonnull
     private String            name;
@@ -42,8 +41,8 @@ public class EventEditDto implements RestOperationDto {
     @Schema(description = "Country code of the location")
     private String            countryCode;
 
-    // @Schema(description = "The type of event")
-    // private EventTypes eventTypes;
+    @Schema(description = "The type of event")
+    private String            eventTypeId;
 
     @Schema(description = "The description about the event")
     private String            description;
