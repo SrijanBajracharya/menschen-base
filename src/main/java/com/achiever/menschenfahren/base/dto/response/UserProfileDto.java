@@ -4,6 +4,7 @@ import javax.annotation.Nonnull;
 
 import com.achiever.menschenfahren.base.dto.request.UserEditDto;
 import com.achiever.menschenfahren.base.dto.request.UserProfileCreateDto;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
@@ -30,6 +31,9 @@ public class UserProfileDto extends UserProfileCreateDto {
 
     @Schema(description = "The user object")
     @Nonnull
-    private UserEditDto       user;
+    private UserDto       user;
+    
+    @JsonIgnore
+    private String userId;
 
 }

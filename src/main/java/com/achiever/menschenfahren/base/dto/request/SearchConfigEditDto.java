@@ -4,6 +4,7 @@ import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
 import com.achiever.menschenfahren.base.dto.RestOperationDto;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
@@ -18,6 +19,7 @@ public class SearchConfigEditDto implements RestOperationDto {
 
     @Schema(description = "The id of user.")
     @Nonnull
+    @JsonIgnore
     private String            userId;
 
     @Schema(description = "The id of the event type.")

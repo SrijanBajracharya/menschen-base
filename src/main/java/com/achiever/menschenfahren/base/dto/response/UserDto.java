@@ -5,6 +5,7 @@ import java.util.Date;
 import javax.annotation.Nonnull;
 
 import com.achiever.menschenfahren.base.dto.request.UserCreateDto;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
@@ -36,4 +37,7 @@ public class UserDto extends UserCreateDto {
     @Nonnull
     @Schema(description = "Created timestamp of user.")
     private Date              createdTimestamp;
+    
+    @JsonIgnore
+    private String password;
 }

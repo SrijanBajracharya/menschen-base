@@ -1,5 +1,7 @@
 package com.achiever.menschenfahren.base.dto.request;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 import lombok.EqualsAndHashCode;

@@ -6,6 +6,7 @@ import javax.annotation.Nonnull;
 
 import com.achiever.menschenfahren.base.dto.request.EventCreateDto;
 import com.achiever.menschenfahren.base.dto.request.UserEditDto;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
@@ -38,6 +39,12 @@ public class EventDto extends EventCreateDto {
     private EventTypeDto      eventType;
 
     @Schema(description = "The user creating the event")
-    private UserEditDto       user;
+    private UserDto       user;
+    
+    @JsonIgnore
+    private String userId;
+    
+    @JsonIgnore
+    private String eventTypeId;
 
 }

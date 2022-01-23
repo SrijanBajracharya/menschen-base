@@ -16,12 +16,6 @@ public class NotificationCreateDto extends NotificationEditDto {
     private static final long serialVersionUID = 91004448822488149L;
 
     /**
-     * The id of a sender.
-     */
-    @Schema(description = "The user who sends the request or invite")
-    private String            originalSenderId;
-
-    /**
      * The id of a receiver.
      */
     @Schema(description = "The user who approves or request to join")

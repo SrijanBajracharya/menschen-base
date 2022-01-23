@@ -21,10 +21,6 @@ public class NotificationInviteDto implements RestOperationDto {
 
     private static final long serialVersionUID = 2114767010770480699L;
 
-    @Schema(description = "The user who sends the invite")
-    @Nonnull
-    private String            originalSenderId;
-
     @Schema(description = "The email to whom invite is sent.")
     @Nonnull
     private String            receiverEmailId;

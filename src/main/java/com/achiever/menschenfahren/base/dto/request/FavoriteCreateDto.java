@@ -14,11 +14,7 @@ import lombok.NoArgsConstructor;
 public class FavoriteCreateDto implements RestOperationDto {
 
     private static final long serialVersionUID = 6633824602173708473L;
-
-    @Nonnull
-    @Schema(description = "The id of the user.")
-    private String            userId;
-
+    
     @Nonnull
     @Schema(description = "The id of an event.")
     private String            eventId;
