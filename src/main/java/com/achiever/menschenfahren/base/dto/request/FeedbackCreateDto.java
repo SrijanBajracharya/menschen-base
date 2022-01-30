@@ -10,10 +10,6 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 public class FeedbackCreateDto {
-
-    @Nonnull
-    private String userId;
-
     @Nonnull
     private String subject;
 

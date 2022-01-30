@@ -3,6 +3,7 @@ package com.achiever.menschenfahren.base.dto.request;
 import javax.annotation.Nonnull;
 
 import com.achiever.menschenfahren.base.dto.RestOperationDto;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
@@ -19,6 +20,11 @@ import lombok.NoArgsConstructor;
 public class UserEditDto implements RestOperationDto {
 
     private static final long serialVersionUID = 5572192286629553275L;
+    
+    /** First name of user **/
+    @Schema(description = "identifier of a user")
+    private String            id;
+
 
     /** First name of user **/
     @Schema(description = "First name of an user")

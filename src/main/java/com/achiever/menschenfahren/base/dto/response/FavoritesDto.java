@@ -17,7 +17,13 @@ import lombok.ToString;
 @EqualsAndHashCode(callSuper = true)
 public class FavoritesDto extends FavoriteCreateDto {
 
-    @Nonnull
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1846867765566669640L;
+
+
+	@Nonnull
     @Schema(description = "The id of favorite.")
     private String id;
 }
