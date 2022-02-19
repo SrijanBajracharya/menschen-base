@@ -37,7 +37,7 @@ public class UserDto extends UserCreateDto {
     @Nonnull
     @Schema(description = "Created timestamp of user.")
     private Date              createdTimestamp;
-    
+
     @JsonIgnore
-    private String password;
+    private String            password;
 }

@@ -14,8 +14,8 @@ public class FilterCreateDto {
     @Schema(description = "The id of the country")
     private String countryId;
 
-    @Schema(description = "The id of the event type.")
-    private String eventTypeId;
+    @Schema(description = "The type of the event.")
+    private String eventType;
 
     @Schema(description = "The from date of the filter.")
     private Date   fromDate;
