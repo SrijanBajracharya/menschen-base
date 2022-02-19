@@ -48,4 +48,10 @@ public class NotificationDto implements RestOperationDto {
     @Schema(description = "The notification request is cancelled.")
     private boolean           alsoVoided;
 
+    @Schema(description = "Flag to check if receiver user matches.")
+    private boolean           matchedReceiverUserId;
+
+    @Schema(description = "flag to check if sender user matches.")
+    private boolean           matchedSenderUserId;
+
 }

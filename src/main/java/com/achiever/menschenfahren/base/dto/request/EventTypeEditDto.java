@@ -1,7 +1,6 @@
 package com.achiever.menschenfahren.base.dto.request;
 
 import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
 
 import com.achiever.menschenfahren.base.dto.RestOperationDto;
 
@@ -26,7 +25,7 @@ public class EventTypeEditDto implements RestOperationDto {
     private String            name;
 
     @Schema(description = "Description of Event Type")
-    @Nullable
+    @Nonnull
     private String            description;
 
     @Schema(description = "Event type is voided or not.")

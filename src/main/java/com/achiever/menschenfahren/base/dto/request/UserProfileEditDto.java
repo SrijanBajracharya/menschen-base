@@ -1,5 +1,10 @@
 package com.achiever.menschenfahren.base.dto.request;
 
+import java.util.Date;
+
+import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
+
 import com.achiever.menschenfahren.base.dto.RestOperationDto;
 import com.achiever.menschenfahren.base.model.Gender;
 
@@ -17,37 +22,47 @@ public class UserProfileEditDto implements RestOperationDto {
     @Schema(description = "The id of role")
     private String            roleId;
 
-    @Schema(description = "The DOB of user")
-    private String            dateOfBirth;
+    @Schema(description = "The DOB of user must be in yyyy-MM-dd format.")
+    @Nonnull
+    private Date              dateOfBirth;
 
     @Schema(description = "If the terms and agreement is agreed")
     private boolean           termsAndAgreement = true;
 
-    @Schema(description = "Timezone of user")
-    private String            timezone;
+    @Schema(description = "Country of user")
+    @Nonnull
+    private String            country;
 
     @Schema(description = "Photo of user")
+    @Nullable
     private String            photo;
 
     @Schema(description = "The address of user")
+    @Nonnull
     private String            address;
 
     @Schema(description = "Gender of an user")
+    @Nonnull
     private Gender            gender;
 
     @Schema(description = "Phone number of an user")
+    @Nonnull
     private String            phoneNumber;
 
     @Schema(description = "About the user.")
+    @Nullable
     private String            description;
 
     @Schema(description = "Education of an user")
+    @Nullable
     private String            education;
 
     @Schema(description = "Hobbies of an user")
+    @Nullable
     private String            hobbies;
 
     @Schema(description = "The experiences of an user")
+    @Nullable
     private String            experiences;
 
 }

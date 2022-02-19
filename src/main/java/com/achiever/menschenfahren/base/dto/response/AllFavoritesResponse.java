@@ -23,9 +23,9 @@ public class AllFavoritesResponse implements RestOperationDto {
     @Schema(description = "The id of favorite.")
     private String            id;
 
-    @Nonnull
-    @Schema(description = "The id of the user.")
-    private String            userId;
+    // @Nonnull
+    // @Schema(description = "The id of the user.")
+    // private String userId;
 
     @Schema(description = "The id of an event.")
     private EventDto          event;

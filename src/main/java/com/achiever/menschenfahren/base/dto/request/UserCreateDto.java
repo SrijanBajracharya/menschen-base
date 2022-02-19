@@ -1,6 +1,6 @@
 package com.achiever.menschenfahren.base.dto.request;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import javax.annotation.Nonnull;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
@@ -25,6 +25,7 @@ public class UserCreateDto extends UserEditDto {
      * password of an user.
      */
     @Schema(description = "password of an user")
+    @Nonnull
     private String            password;
 
 }

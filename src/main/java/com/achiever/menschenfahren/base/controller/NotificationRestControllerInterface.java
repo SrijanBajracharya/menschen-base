@@ -139,7 +139,7 @@ public interface NotificationRestControllerInterface {
             @ApiResponse(responseCode = "400", description = "The notification data is incomplete"),
             @ApiResponse(responseCode = "410", description = "The notification has been voided") })
     @GetMapping(PATH_NOTIFICATION)
-    ResponseEntity<DataResponse<List<NotificationDto>>> ggetNotificationByToken(
+    ResponseEntity<DataResponse<List<NotificationDto>>> getNotificationByToken(
             @RequestParam(name = CommonConstants.Params.ALSO_VOIDED, defaultValue = "false", required = false) final boolean alsoVoided)
             throws InvalidNotificationException;
 
